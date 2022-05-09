@@ -1,0 +1,71 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate} % Add some more Ordered Symbol Lists
+
+\title{Lists, Tables and many others}
+\author{hoang.tran2053018 }
+\date{January 2022}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+    This is an abstract.
+\end{abstract}
+
+\section{Introduction}
+Taipei\footnote[3]{The capital city of Taiwan} is a beautiful developed city.
+
+% Unordered Lists
+\begin{itemize}
+    \item[+] Bread
+    \item Milk
+    \item Other stuff
+    \begin{itemize}
+        \item Pencils
+        \item Notebooks
+        \item Erasers
+    \end{itemize}
+\end{itemize}
+
+% Ordered Lists
+\begin{enumerate}[I)]
+    \item Pizza
+    \item Pasta
+    \begin{enumerate}
+        \item Flour
+        \item Meat
+        \item Vegetable
+    \end{enumerate}
+    \item Taco
+    \begin{itemize}
+        \item Is good
+        \item Is fresh
+    \end{itemize}
+\end{enumerate}
+
+% TABULAR ENV
+Text before table.
+\begin{tabular}{|r|c|l|} % r = right align, c = center, l = left align
+\hline
+AAAAAAAAAA & BBBBBBBBBB & CCCCCCCCCC\\\hline\hline
+aa & bb & cc
+\end{tabular}
+Text after table.
+
+% TO FIX THE ABOVE PROBLEM, WE WRAP THE TABULAR INSIDE A TABLE ENV AND THEN CENTER IT, AND SPECIFY THE [h] ARGUMENT.
+Text before table Text before table Text before table Text before table Text before table Text before table Text before table Text before table Text before table Text before table Text before table Text before table Text before table Text before table Text before table Text before table Text before table Text before table \newline
+\begin{table}[h!]
+\centering
+\begin{tabular}{|r|c|l|} % r = right align, c = center, l = left align
+\hline
+AAAAAAAAAA & BBBBBBBBBB & CCCCCCCCCC\\\hline\hline
+aa & bb & cc
+\end{tabular}
+\caption{This is table 1.}
+\end{table}
+
+
+
+Text after table.
+
+\end{document}

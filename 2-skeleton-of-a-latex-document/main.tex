@@ -1,0 +1,47 @@
+\documentclass{article}
+
+% ------------ PACKAGES ------------
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes} % For quotations
+\usepackage{blindtext} % Generate lorem ipsum
+\usepackage{comment} % Make multiline comments
+
+% ------------ META INFO ABOUT THE DOCUMENT ------------
+\title{Skeleton of a LaTeX document}
+\author{Hoang Tran}
+\date{\today}
+
+% ------------ BEGIN OF THE DOCUMENT ------------
+\begin{document}
+\maketitle
+\tableofcontents
+
+\section{First section}
+\subsection{1st subsection}
+\subsection*{Another subsection}
+
+Once I have read this quote: \textquote{This is a quote}
+% This is a comment
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+
+\textbf{Press Ctrl + B for bold text (See shortcuts)} Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. \par \textit{Now press Ctrl + I for italicized.} Excepteur sint occaecat cupidatat non proident, sunt in culpa qui \underline{officia deserunt} mollit anim id est laborum.
+
+% Comment can be used to quickly clear an error and come back later.
+% \textb{This is in bold.}
+
+\section*{Another kind of section without numbering}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \par
+Pharetra vel turpis nunc eget lorem dolor. Purus ut faucibus pulvinar elementum integer enim neque. Porta lorem mollis aliquam ut. \newline
+Risus nullam eget felis eget nunc lobortis. At augue eget arcu dictum varius duis at consectetur lorem. 
+\begin{comment} % Commenting out a MULTILINE ERROR
+    Laoreet suspendisse interdum consectetur libero. Accumsan in nisl nisi scelerisque eu. Tortor consequat id porta nibh venenatis cras sed felis. Pretium fusce id velit ut.
+\end{comment}
+
+\section{Second section}
+This is example of 25% percentage sign.
+
+This is example of 25\% percentage sign. \newline
+\blindtext
+
+\end{document}
