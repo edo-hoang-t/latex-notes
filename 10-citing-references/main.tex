@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{verbatim}
+
+\title{Citing References}
+\author{hoang.tran2053018 }
+\date{January 2022}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+This is a ref to BiBTeX database \cite{shelley}. This is another ref \cite{mittelbach2004latex}.
+
+
+
+\bibliographystyle{alpha}
+\bibliography{biblio.bib}
+% --------------------------------------
+
+\begin{comment} % THis is the 1st way to ref
+A good fairy tail can be found in \cite[p.37]{andersen}. A good book is the following \cite[p.~45]{shelley}.
+
+
+\begin{thebibliography}{2}
+\bibitem{andersen}
+H. C. Andersen. \textit{The Little Mermaid}. 1837
+
+\bibitem{shelley}
+M. Shelley. \textit{Frankenstein}. Oxford University Press, 1818.
+
+\end{thebibliography}
+\end{comment}
+
+\end{document}

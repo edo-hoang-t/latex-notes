@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amsfonts, amsthm}
+\usepackage{hyperref} 
+\theoremstyle{plain} % default
+\newtheorem{theorem}{Theorem}[section]
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition} % Notice if we put [theorem] after {Definition} then the effect is different.
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+
+\title{Theorems, Definitions, Remarks}
+\author{hoang.tran2053018 }
+\date{January 2022}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+\begin{theorem}[Name of the theorem]
+This is a theorem.
+\end{theorem}
+\begin{proof}
+This is a proof.
+\end{proof}
+\begin{definition}\label{def:1}
+This is a definition.
+\end{definition}
+
+\begin{remark}
+This is a remark.
+\end{remark}
+
+\begin{definition}
+This is another def.
+\end{definition}
+
+Refer to definition \ref{def:1} for more details.
+\end{document}

@@ -1,0 +1,32 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{sqrcaps} % The font used in Title
+\usepackage[T1]{fontenc} 
+\usepackage[scaled]{beramono} % This is used for reset the monospace font (ttfamily)
+\usepackage[dvipsname]{xcolor} % dvipsname for more color (see in Overleaf)
+% NOTICE SOME EXTERNAL FONT CAN OVERWRITE THE EXISTING FONT FAMILY.
+% Another way to set font is import .ttf file to the Folder menu -> ...
+
+\definecolor{mynewcolor}{RGB}{187, 42, 97} % Notice if use rgb (lowercase), all color must be in normalized form (divided by 255)
+\definecolor{color2}{HTML}{325476}
+
+\title{{\color{red} {\sqrcfamily Manipulating Text}}}
+\author{\Huge hoang.tran2053018}
+\date{January 2022}
+
+\begin{document}
+
+\maketitle
+
+\section*{\underline{\ttfamily Introduction}}
+{\small This} is some \textbf{text} to manipulate.
+
+This is some \textit{text} to {\sffamily manipulate}.
+
+{\huge This} is some text to {\ttfamily manipulate}. % Monospace font for CODE
+
+\textcolor{mynewcolor}{Introduction}
+\textcolor{color2}{Introduction}
+
+\end{document}

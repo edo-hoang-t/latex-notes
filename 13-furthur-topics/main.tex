@@ -1,0 +1,34 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{subfiles} % Split when your files get longer and longer, hard to navigate -> edit a small part leads to recompile the whole document.
+% THE IDEA IS EACH SUBFILE FOR EACH SECTION
+\newcommand{\intinf}[1]{\int_{#1}^{\infty}}
+\newcommand{\eg}{e.g.\ } % Inner space is diff from outer (ending) dot-spaces
+\newcommand{\ie}{e.g.\ }
+
+\title{Furthur Topics}
+\author{hoang.tran2053018 }
+\date{January 2022}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+To write a fraction in LaTeX, you type \verb+\frac{}{}+. Or to write a \textbf{for} loop, use write code like this:
+
+% Verbatim env display all content as it be inside the env.
+\begin{verbatim} 
+for num in range(1,40):
+    print(num ** 2)
+\end{verbatim}
+
+\subfile{Sections/Section1}
+\subfile{Sections/Section2}
+\noindent
+We have the integral \[\intinf{5} \frac{1}{x^2}\]
+converges. \\
+\noindent
+I like many fruits \eg apples, pineapples,...
+
+\end{document}

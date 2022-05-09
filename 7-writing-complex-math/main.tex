@@ -1,0 +1,53 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{hyperref}
+\usepackage{xurl} % For breaking the URL into new line, not overflow.
+
+\title{Writing Complex Math}
+\author{hoang.tran2053018 }
+\date{January 2022}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+Notice that sum for inline and display math is different: $\sum_{n=0}^{\infty}\frac{1}{n^2}$.
+\[\sum_{n=0}^{\infty}\frac{1}{n^2}\]
+Same for integral. int for single, iint for double integral: $\iint_{S}x^2ydydx$
+\[\iint_{S}x^2ydydx\]
+$\lim_{x \to 1}x$
+\[\lim_{x \to 1}x\]
+\[\max_{n \in \{1,2,3\}}n\]
+
+\section{Multiple lines}
+\begin{multline} % This env just used for LONG EQUATIONS
+    f(x)=2x+1\\
+    f(x)=0+x+2x^2+3x^3+4x^4+5xy+0+x+2x^2+3x^3+4x^4+5xy+x+2x^2+3x^3+4x^4+5xy+0+x+2x^2+3x^3+4x^4+5xy\\
+    f(x)=0+x+2x^2+3x^3+4x^4+5xy+0\\+x+2x^2+3x^3+4x^4\\+5xy+x+2x^2+3x^3+4x^4+5xy+0+x+2x^2+3x^3+4x^4+5xy
+\end{multline}
+If you dont want to have the number at the end, ask *.
+\begin{multline*}
+    f(x)=0+x+2x^2+3x^3+4x^4+5xy+0\\+x+2x^2+3x^3+4x^4\\+5xy+x+2x^2+3x^3+4x^4+5xy+0+x+2x^2+3x^3+4x^4+5xy
+\end{multline*}
+
+\begin{align}\label{eq:system_of_equations}
+    2x+3y+4z-w &=3 & x-2y-z+5w &=-4\\
+    x+y+z-w &= 1 & x+y &= -10 \notag % clear a number in a line
+\end{align}
+\begin{align}\label{eq:bien_doi}
+    f(x) &=(3x+4)(x+2)\\
+    &=3x^2+10x+8 \notag \\
+    &=8+10x+3x^2 \notag
+\end{align}
+See \eqref{eq:system_of_equations} and \eqref{eq:bien_doi} \\
+Notice read the img to see more math.\\
+Additionally check out the 2 links here:
+\begin{itemize}
+    \item \url{https://tex.stackexchange.com/questions/77589/what-do-the-pieces-of-latex-left-and-right-respectively-mean}
+    \item \url{https://www.overleaf.com/learn/latex/Spacing_in_math_mode}
+    \item \url{https://www.overleaf.com/learn/latex/Brackets_and_Parentheses}
+\end{itemize}
+Notice that \textit{left} and \textit{right} cannot be used in \textit{multline} env. We must change to \textit{big} or \textit{Bigg}.
+\end{document}

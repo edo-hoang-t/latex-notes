@@ -1,0 +1,55 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts} % For many fonts below.
+\usepackage{amsthm}
+
+\title{Math Fonts, Matrices and Cases}
+\author{hoang.tran2053018 }
+\date{January 2022}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+$\mathbf{a}$ %compare to textbf = text bold face
+
+$\mathcal{T} \quad \mathcal{C}, C$
+
+$\mathbb{R}, \mathbb{a}, \mathcal{a}$
+
+$\bar x, \bar {abcd}, \overline{abc}$
+
+$\dot f, f'''$
+
+\section{Matrices}
+\[
+\begin{matrix}
+1 & 2 & 3 & 4\\
+5 & 6 & 7 & 8
+\end{matrix}\\
+\begin{pmatrix}
+1 & 2 & 3 & 4\\
+5 & 6 & 7 & 8
+\end{pmatrix}\\
+\begin{bmatrix}
+1 & 2 & 3 & 4\\
+5 & 6 & 7 & 8
+\end{bmatrix}\\
+\begin{vmatrix}
+1 & 2 & 3 & 4\\
+5 & 6 & 7 & 8
+\end{vmatrix}
+\]
+
+\section{Cases}
+\[
+|x| = 
+\begin{cases}
+x & \text{for } x>0\\
+0 & \text{for } x=0\\
+-x & \text{for } x<0
+\end{cases}
+\]
+\end{document}

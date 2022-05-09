@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{hyperref} % Important to put at the end because it redefines some Latex commands.
+% This package autoly make all the ref clickable and the table of contents clickable and can link to outside webpages via Url() or href() cmds.
+\title{Intro to References and Links}
+\author{hoang.tran2053018 }
+\date{January 2022}
+
+\begin{document}
+
+\maketitle
+\section{Hand writing}
+This is self-explanatory.
+
+\section{LaTeX}\label{sec:latex-section} % We can use label to make ref to any env.
+LaTeX is an amazing software for typesetting. Here is a second-degree polynomial: \[ax^{2}+bx+c\]
+If we just use displayed math equation, it's difficult to ref to the equation. Instead, we can put the equation inside \textbf{equation} environment and refer to as normal.
+\begin{equation}
+\label{eq:2nd_polynomial} % Note for consistency, for equation use _, for section use -
+    ax^{2}+bx+c
+\end{equation}
+You can read more about LaTeX table here: \url{https://www.overleaf.com/learn/latex/Tables#Captions.2C_labels_and_references}. As you see, display the whole URL can be lengthy. Another way here: \href{https://www.overleaf.com/learn/latex/Tables#Captions.2C_labels_and_references}{LaTeX Table - Overleaf}. Both are clickable.
+
+\newpage
+\section{MS Word}
+Unlike LaTeX discussed in Section \ref{sec:latex-section}, MS Word is more user-friendly. See more in page \pageref{sec:latex-section}. Now I refer to the equation 1 above: see \ref{eq:2nd_polynomial}. Notice we dont have () around 1 here, which is not nice. A way to solve is manually add () besides. Or we can use amsmath package. See \eqref{eq:2nd_polynomial}.
+
+\end{document}
